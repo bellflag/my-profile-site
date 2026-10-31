@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내 프로필</title>
+  <style>
+    :root {
+      --bg: #f7f7f9;
+      --card: #ffffff;
+      --text: #1f2430;
+      --muted: #6b7280;
+      --accent: #4f46e5;
+      --border: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12141a;
+        --card: #1b1e27;
+        --text: #e8eaf0;
+        --muted: #9aa1b2;
+        --accent: #818cf8;
+        --border: #2a2e3a;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, "Segoe UI", "Malgun Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+    header { text-align: center; margin-bottom: 32px; }
+    .avatar {
+      width: 120px; height: 120px; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 48px; font-weight: 700; margin: 0 auto 16px;
+    }
+    h1 { font-size: 2rem; }
+    .tagline { color: var(--muted); margin-top: 4px; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 12px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+    .skills li {
+      border: 1px solid var(--border); border-radius: 999px;
+      padding: 4px 14px; font-size: 0.9rem;
+    }
+    .projects { list-style: none; }
+    .projects li { padding: 8px 0; border-bottom: 1px solid var(--border); }
+    .projects li:last-child { border-bottom: none; }
+    .projects span { display: block; color: var(--muted); font-size: 0.9rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 32px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">홍</div>
+      <h1>홍길동</h1>
+      <p class="tagline">웹 개발자 · 배우는 것을 좋아합니다</p>
+    </header>
+
+    <section>
+      <h2>소개</h2>
+      <p>안녕하세요! 이곳에 자기소개를 적어주세요. 어떤 일을 하고, 무엇에 관심이 있는지 간단히 소개해보세요.</p>
+    </section>
+
+    <section>
+      <h2>기술 스택</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>프로젝트</h2>
+      <ul class="projects">
+        <li>프로젝트 이름 1<span>프로젝트에 대한 간단한 설명</span></li>
+        <li>프로젝트 이름 2<span>프로젝트에 대한 간단한 설명</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>연락처</h2>
+      <p>
+        이메일: <a href="mailto:pinksand369@gmail.com">pinksand369@gmail.com</a><br>
+        GitHub: <a href="https://github.com/bellflag" target="_blank" rel="noopener">github.com/bellflag</a>
+      </p>
+    </section>
+
+    <footer>&copy; 2026 홍길동. All rights reserved.</footer>
+  </div>
+</body>
+</html>
